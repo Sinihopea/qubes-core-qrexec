@@ -22,23 +22,23 @@
 #
 #
 
-Name:		qubes-core-qrexec-dom0
-Version:	@VERSION@
-Release:	1%{dist}
-Summary:	The Qubes qrexec files (Dom0-side)
+Name:       qubes-core-qrexec-dom0
+Version:    @VERSION@
+Release:    1%{dist}
+Summary:    The Qubes qrexec files (Dom0-side)
 
-Group:		Qubes
-Vendor:		Invisible Things Lab
-License:	GPL
-URL:		http://www.qubes-os.org
+Group:      Qubes
+Vendor:     Invisible Things Lab
+License:    GPL
+URL:        http://www.qubes-os.org
 
-BuildRequires:	gcc
+BuildRequires:  gcc
 BuildRequires:  python3-devel
 # for building documentation
-BuildRequires:	python3-sphinx
-BuildRequires:	qubes-libvchan-devel
+BuildRequires:  python3-sphinx
+BuildRequires:  qubes-libvchan-devel
 BuildRequires:  qubes-core-qrexec-devel
-BuildRequires:	systemd-devel
+BuildRequires:  systemd-devel
 
 Requires:   python3
 Requires:   python3-inotify
@@ -49,7 +49,7 @@ Requires:   qubes-core-qrexec = %{version}-%{release}
 Conflicts:  qubes-core-dom0 < 4.1.12
 Conflicts:  qubes-core-dom0-linux < 4.0.9999
 
-Source0: qubes-core-qrexec-%{version}.tar.gz
+Source0:    qubes-core-qrexec-%{version}.tar.gz
 
 %description
 The Qubes qrexec files for installation on Dom0.
